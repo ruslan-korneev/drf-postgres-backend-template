@@ -62,3 +62,6 @@ INSTALLED_APPS = [
     "src.apps.my_app", # if app name is users - then use here "src.apps.users"
 ]
 ```
+
+# Continuous Integration
+1. Tests: replace `echo` command with arguments to `pytest`. Pytest's settings are in [pyproject.toml](pyproject.toml)  
