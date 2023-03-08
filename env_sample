@@ -1,0 +1,20 @@
+# Django
+SECRET_KEY='Django secrete key'
+DEBUG=1
+SERVER_PORT=8000
+RAPIDOC_PORT=8090
+DJANGO_SETTINGS_MODULE=src.settings
+
+# Database
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=postgres
+POSTGRES_PORT=5433
+# to use django locally (not in container) - change postgres host to `localhost`
+POSTGRES_HOST=db
+
+# Cache
+REDIS_PORT=6379
+REDIS_HOST=0.0.0.0
+REDIS_CACHE_LOCATION=1
+CACHE_KEY_PREFIX=example
