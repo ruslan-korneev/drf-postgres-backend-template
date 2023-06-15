@@ -55,25 +55,16 @@ dj = "src.manage:main"
 ignore = ["F401", "F403", "F405"]
 exclude = [
     "migrations",
-    ".bzr",
     ".direnv",
-    ".eggs",
     ".git",
-    ".hg",
     ".mypy_cache",
-    ".nox",
-    ".pants.d",
     ".ruff_cache",
-    ".svn",
     ".tox",
     ".venv",
+    "venv",
     "__pypackages__",
-    "_build",
-    "buck-out",
-    "build",
     "dist",
     "node_modules",
-    "venv",
 ]
 line-length = 120
 

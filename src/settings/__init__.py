@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_extensions",
     # apps
-    # "src.apps.appname",
+    "src.apps.users",
 ]
 
 MIDDLEWARE = [
@@ -37,7 +37,7 @@ MIDDLEWARE = [
     "djangorestframework_camel_case.middleware.CamelCaseMiddleWare",
 ]
 
-ROOT_URLCONF = "src.urls"
+ROOT_URLCONF = "src.config.urls"
 
 TEMPLATES = [
     {
@@ -55,7 +55,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "src.wsgi.application"
+WSGI_APPLICATION = "src.config.wsgi.application"
 
 DATABASES = {
     "default": {
@@ -68,9 +68,9 @@ DATABASES = {
     }
 }
 
-# Password validation
-# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
+AUTH_USER_MODEL = "users.User"
 
+# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
