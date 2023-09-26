@@ -2,7 +2,7 @@
 name = "django-postgres-backend-template"
 version = "0.1.0"
 description = ""
-authors = ["Ruslan <shaggybackend@gmail.com>"]
+authors = ["Ruslan <admin@ruslan.beer>"]
 readme = "README.md"
 packages = [{include = "src"}]
 
@@ -15,8 +15,8 @@ django = "^4.1.7"
 djangorestframework = "^3.14.0"
 django-extensions = "^3.2.1"
 djangorestframework-camel-case = "^1.4.2"
-django-redis = "^5.2.0"
 drf-spectacular = "^0.26.2"
+django-redis = "^5.3.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -29,6 +29,7 @@ ruff = "^0.0.246"
 pytest = "^7.2.1"
 pytest-django = "^4.5.2"
 model-bakery = "^1.10.1"
+black = "^23.9.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -55,7 +56,6 @@ dj = "src.manage:main"
 ignore = ["F401", "F403", "F405"]
 exclude = [
     "migrations",
-    ".direnv",
     ".git",
     ".mypy_cache",
     ".ruff_cache",

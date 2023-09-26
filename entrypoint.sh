@@ -1,5 +1,5 @@
 #!/bin/bash
 
-dj collectstatic --noinput
-dj migrate
+poetry run dj collectstatic --noinput
+poetry run dj migrate
 "$@"
